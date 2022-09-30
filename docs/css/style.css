@@ -8,8 +8,8 @@
 
 :root {
     /* Font Family */
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Roboto Mono', monospace;
+    --ff-secondary: 'Spectral', serif;
     
     /* Font Weight */
     --fw-reg: 300;
