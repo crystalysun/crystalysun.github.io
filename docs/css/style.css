@@ -15,9 +15,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --color-light: #fff
+    --color-light: #fff;
     --color-dark: #303030;
-    --color-accent: #16e0bd
+    --color-accent: #16e0bd;
     
     /* Font Size */
     --fs-h1: 3rem;
