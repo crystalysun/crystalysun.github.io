@@ -46,3 +46,71 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
+
+section {
+    padding: 5em 2em; /* 5 top-bottom, 2 left-right */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong { font-weight: var(--fw-bold) }
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.section-title {
+    margin-bottom: .25em; /* em is relative to font size */
+}
+
+.section-title-intro {
+    font-weight: var(--fw-reg);
+}
+
+.section-title-intro strong {
+    display: block; /* name always ends up on own line */
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section-subtitle-intro,
+.section-subtitle-bio {
+    background: var(--color-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1 em;
+}
+
+/* header */
+
+nav { display: none; }
+
+/* Intro Section */
+
+.intro {
+    position: relative;
+}
+
+@media (min-weidth: 600px) {
+    .intro {
+        display: grid;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content; /* shrink image, max text size */
+    }
+}
