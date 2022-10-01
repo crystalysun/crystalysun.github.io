@@ -5,132 +5,50 @@
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 		<title>Crystal Portfolio Website</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/b94bf06c1b.js" cross-origin="anonymous"></script>
         
         <!-- FIXME -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Spectral:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Raleway:wght@300;900&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/style.css">
     </head>
     
     <body>
-        <header>
-            <div class="logo">
-                <img arc="img/basn3p01.png" alt-"">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#bio" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-        
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section-title section-title-intro">
-                Hi, I am <strong>Crystal Sun</strong>
+                <strong>Crystal Sun</strong>
             </h1>
-            <p class="section-subtitle section-subtitle-intro">developer</p>
-            <img src="img/basn3p01.png" alt="profile picture"
+            <img src="img/headshot.png" alt="profile picture" class="intro-img">
         </section>
         
         <!-- About Me -->
         <section class="about-me" id="bio">
             <h2 class="section-title section-title-bio">About Me</h2>
-            <p class="section-subtitle section-subtitle-about"</p>
+            <!-- <p class="section-subtitle section-subtitle-bio">Subtitle</p> -->
             
             <div class="about-me-body">
                 <p>This is about me</p>
                 <p>More about me</p>
             </div>
             
-            <img src="img/basn3p01.png" alt="another pic of me">
-        </section>
-        
-        <!-- Projects -->
-        <section class="my-projects" id="projects">
-            <h2 class="section-title section-title-projects">My Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Hello.</p>
-                </div>
-                
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Hello.</p>
-                </div>
-                
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>Hello.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Courses -->
-        <section class="my-courses" id="courses">
-            <h2 class="section-title">Courses</h2>
-            <p class="section-subtitle"></p>
-            
-            <div class="courses">
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-                
-                <a href="#" class="course-item">
-                    <img src="img/basn3p01.png" alt="" class="course-img">
-                </a>
-            </div>
+            <img src="img/michigan-cse.jpeg" alt="education" class="bio-img">
         </section>
         
         <!-- Footer -->
-        <footer>
+        <footer class="footer">
             <a href="mailto:crysun@umich.edu" class="footer-link">crysun@umich.edu</a>
             <ul class="social-list">
-                <li class="social-list-item"><a class="social-list-link" href="https://www.linkedin.com/in/crystalysun">LINK1</a></li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://www.linkedin.com/in/crystalysun">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://www.linkedin.com/in/crystalysun">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
             </ul>
         </footer>
     </body>
