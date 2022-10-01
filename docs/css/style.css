@@ -17,10 +17,11 @@
     
     --color-light: #fff;
     --color-dark: #303030;
-    --color-accent: #16e0bd;
+    --color-rose: #b97375;
+    --color-blue: #819595;
     
     /* Font Size */
-    --fs-h1: 4rem;
+    --fs-h1: 3.75rem;
     --fs-h2: 2.5rem;
     --fs-h3: 2.25rem;
     --fs-body: 1rem;
@@ -36,14 +37,14 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3rem;
         --fs-h3: 2.75rem;
-        --fs-body: 1.5rem;
+        --fs-body: 1.25rem;
     }
 }
 
 /* General Styles */
 
 body {
-    background: var(--color-light);
+    background: var(--color-blue);
     color: var(--color-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -148,13 +149,14 @@ h3 { font-size: var(--fs-h3) }
 
 /* About Me */
 .about-me {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 900px;
+    background: var(--color-light);
+    color: var(--color-dark);
 }
 
 .bio-img {
     box-shadow: var(--bs);
-    max-width: 200px;
+    max-width: 400px;
 }
 
 @media (min-width: 600px) {
@@ -163,18 +165,15 @@ h3 { font-size: var(--fs-h3) }
         grid-template-columns: 1fr 200px;
         grid-template-areas:
             "title img"
-            "subtitle img"
             "text img";
         grid-column-gap: 2em;
+        margin-bottom: 3em;
+        margin-left: 10em;
+        margin-right: 10em;
     }
     
     .section-title-bio {
         grid-area: title;
-    }
-    
-    .section-subtitle-bio {
-        grid-column: 1 / -1;
-        grid-row: 2;
     }
     
     .bio-img {
@@ -187,9 +186,15 @@ h3 { font-size: var(--fs-h3) }
 
 .footer {
     background: #111;
-    color: var(--color-accent);
+    color: var(--color-rose);
     text-align: center;
     padding: 2.5em 0;
+}
+
+.footer strong {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: 1.5em;
 }
 
 .footer a {
